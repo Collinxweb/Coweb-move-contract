@@ -1,0 +1,12 @@
+# Testnet variant — swap this in for Move.toml when deploying to testnet:
+#   cp Move.testnet.toml Move.toml
+[package]
+name = "epochs_bounty"
+version = "0.0.1"
+edition = "2024.beta"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet" }
+
+[addresses]
+epochs_bounty = "0x0"
